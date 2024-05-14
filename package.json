@@ -2,14 +2,22 @@
   "name": "vscode-multi-ai",
   "displayName": "vscode-multi-ai",
   "description": "multi lang/framework ai refactoring",
-  "version": "0.0.1",
+  "version": "0.0.2",
+  "publisher": "SemihP", 
   "engines": {
     "vscode": "^1.85.0"
   },
   "categories": [
     "Other"
   ],
+  "icon": "images/icon.png",
   "main": "./dist/extension.js",
+  "activationEvents": [
+    "onCommand:vscode-multi-ai.helloWorld",
+    "onCommand:vscode-multi-ai.refactorWithChatgpt",
+    "onCommand:vscode-multi-ai.codeFromZero",
+    "onCommand:vscode-multi-ai.setApiKey"
+  ],
   "contributes": {
     "commands": [
       {
@@ -18,7 +26,15 @@
       },
       {
         "command": "vscode-multi-ai.refactorWithChatgpt",
-        "title": "Refactor with ChatGPT"
+        "title": "Refactor it!🚀"
+      },
+      {
+        "command": "vscode-multi-ai.codeFromZero",
+        "title": "From Zero to Hero!🤺"
+      },
+      {
+        "command": "vscode-multi-ai.setApiKey",
+        "title": "Set Gemini API Key"
       }
     ],
     "menus": {
@@ -26,6 +42,10 @@
         {
           "command": "vscode-multi-ai.refactorWithChatgpt",
           "when": "editorHasSelection",
+          "group": "navigation"
+        },
+        {
+          "command": "vscode-multi-ai.codeFromZero",
           "group": "navigation"
         }
       ]
