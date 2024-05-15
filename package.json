@@ -15,6 +15,7 @@
   "activationEvents": [
     "onCommand:vscode-multi-ai.helloWorld",
     "onCommand:vscode-multi-ai.refactorWithChatgpt",
+    "onCommand:vscode-multi-ai.explainIt",
     "onCommand:vscode-multi-ai.codeFromZero",
     "onCommand:vscode-multi-ai.setApiKey"
   ],
@@ -33,6 +34,10 @@
         "title": "From Zero to Hero!🤺"
       },
       {
+        "command": "vscode-multi-ai.explainIt",
+        "title": "Explain strange things!👾"
+      },
+      {
         "command": "vscode-multi-ai.setApiKey",
         "title": "Set Gemini API Key"
       }
@@ -41,6 +46,11 @@
       "editor/context": [
         {
           "command": "vscode-multi-ai.refactorWithChatgpt",
+          "when": "editorHasSelection",
+          "group": "navigation"
+        },
+        {
+          "command": "vscode-multi-ai.explainIt",
           "when": "editorHasSelection",
           "group": "navigation"
         },
