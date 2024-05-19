@@ -2,7 +2,7 @@ import axios, { AxiosResponse } from 'axios';
 import * as vscode from 'vscode';
 
 const apiUrl = 'https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent';
-const apiKey = 'AIzaSyBsYz84R9WBUrVcy836DWvfEdx1bZkZmH8';
+const apiKey = '';
 
 export async function sendApiRequest(prompt: string): Promise<AxiosResponse<any>> {
   return axios.post(
