@@ -11,7 +11,7 @@ export function activate(context: vscode.ExtensionContext) {
     context.subscriptions.push(refactorWithChatGPTCommand);
     registeredCommands.add('vscode-multi-ai.refactorWithChatgpt');
   }
-
+  
   if (!registeredCommands.has('vscode-multi-ai.codeFromZero')) {
     const codeFromZeroCommand = registerCodeFromZeroCommand();
     context.subscriptions.push(codeFromZeroCommand);
