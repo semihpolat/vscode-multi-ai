@@ -1,23 +1,31 @@
-# Refactor with ChatGPT
+# Code Companion for VSCode
 
-Bu VSCode eklentisi, seçili metni ChatGPT ile yeniden yapılandırmanızı sağlar. Sağ tıklama menüsüne "Refactor with ChatGPT" seçeneğini ekler ve bu seçenek seçili metni Gemini API'ye göndererek yeniden yapılandırılmış metni geri alır.
+This VSCode extension is an open-source and fun alternative to GitHub Copilot. With three powerful features, it enhances your coding experience:
 
-## Kurulum
+1. **From Zero to Hero**: Generate code from scratch.
+2. **Refactor It**: Refactor existing code effortlessly.
+3. **Explain Strange Things**: Add comments to any line of code for better understanding.
 
-1. `vsce package` komutunu kullanarak eklentiyi paketleyin.
-2. Paketlenen `.vsix` dosyasını VSCode'a yükleyin (`Extensions` panelinde `Install from VSIX...` seçeneğini kullanarak).
+![Explain Strange Things](https://raw.githubusercontent.com/semihpolat/vscode-multi-ai/main/images/1.gif)
+![Refactor It](https://raw.githubusercontent.com/semihpolat/vscode-multi-ai/main/images/2.gif)
 
-## Kullanım
+## Installation
 
-1. VSCode'da bir metni seçin.
-2. Sağ tıklayın ve "Refactor with ChatGPT" seçeneğini seçin.
-3. Açılan giriş kutusuna refactoring talimatlarınızı girin ve Enter'a basın.
-4. Seçili metin, girilen talimatlara göre yeniden yapılandırılacak.
+1. Use the command `vsce package` to package the extension.
+2. Install the packaged `.vsix` file in VSCode by selecting `Install from VSIX...` in the `Extensions` panel.
 
-## Geliştirme
+## Usage
 
-Bu eklenti TypeScript ve VSCode Extension API kullanılarak geliştirilmiştir. Katkıda bulunmak isterseniz, lütfen projeyi forklayın ve pull request gönderin.
+1. Select any text in VSCode.
+2. Right-click and choose one of the three options:
+   - **From Zero to Hero**: Generate new code based on your input.
+   - **Refactor It**: Enter refactoring instructions to modify the selected code.
+   - **Explain Strange Things**: Add comments to explain the selected code.
 
-## Lisans
+## Development
 
-Bu proje MIT Lisansı altında lisanslanmıştır.
+This extension is developed using TypeScript and the VSCode Extension API. Contributions are welcome! Fork the project and send a pull request to contribute.
+
+## License
+
+This project is licensed under the MIT License.
