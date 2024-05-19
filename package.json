@@ -2,7 +2,7 @@
   "name": "vscode-multi-ai",
   "displayName": "vscode-multi-ai",
   "description": "multi lang/framework ai refactoring",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "publisher": "SemihP",
   "engines": {
     "vscode": "^1.85.0"
