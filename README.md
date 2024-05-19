@@ -1,4 +1,4 @@
-# Code Companion for VSCode
+# VSCode Multi AI
 
 This VSCode extension is an open-source and fun alternative to GitHub Copilot. With three powerful features, it enhances your coding experience:
 
